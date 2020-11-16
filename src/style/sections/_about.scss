@@ -17,7 +17,14 @@
     -webkit-clip-path: none;
     clip-path: none;
   }
-
+  ul{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    li {
+      text-align: start;
+    }
+  }
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
